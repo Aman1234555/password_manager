@@ -1,0 +1,38 @@
+{
+  "name": "secure-password-manager-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "test": "mocha test/**/*.test.js --recursive --exit",
+    "lint": "eslint .",
+    "format": "prettier -w ."
+  },
+  "dependencies": {
+    "argon2": "latest",
+    "cookie-parser": "latest",
+    "cors": "latest",
+    "csurf": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-rate-limit": "latest",
+    "helmet": "latest",
+    "jsonwebtoken": "latest",
+    "mysql2": "latest",
+    "nodemailer": "^8.0.7",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@eslint/js": "latest",
+    "chai": "^6.2.2",
+    "eslint": "latest",
+    "globals": "latest",
+    "mocha": "^11.7.5",
+    "prettier": "latest",
+    "sinon": "^22.0.0",
+    "supertest": "latest"
+  }
+}
